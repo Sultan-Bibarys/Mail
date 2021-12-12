@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Profile</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="styleBD.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="ml-3">
+            
+            <div class="sidebar-header">
+                <h3>Poshta KZ</h3>
+                <strong>PK</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-envelope"></i>
+                        Message
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="midDark/index.html">
+                                <i class="fas fa-inbox"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="midDark/index.html">
+                                <i class="fas fa-paper-plane"></i>
+                                Send
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-backspace"></i>
+                                Spam
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#" onclick="myFunction()">
+                        <!--<i class="fas fa-paper-plane"></i>-->
+                        <i class="fas fa-plus"></i>
+                        Compose
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-trash-alt"></i>
+                        Trash
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        More
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="../WhiteStyle/sideBarW.html" class="whiteS" >White theme</a>
+                </li>
+                <li>
+                    <a href="#" class="darkS">Dark theme</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="profile container-fluid">
+                <div class="pages_section row">
+                    <div class="page_section col-sm-4 col-md-3 col-lg-2">
+                        <a href="">Profile</a>
+                    </div>
+                    <div class="page_section col-sm-4 col-md-3 col-lg-2">
+                        <a href="">Privacy</a>
+                    </div>
+                    <div class="page_section col-sm-4 col-md-3 col-lg-2">
+                        <a href="">Notification</a>
+                    </div>
+                </div>
+                <div class="information_section row">
+                    <div class="center container">
+                        <div class="main row">
+                            <div class="photo col-md-4 col-lg-2 col-sm-4">
+                                <div class="image">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/250px-Donald_Trump_official_portrait.jpg" height="230" width="150" alt="">
+                                    <a class="edit" href="">Edit</a>
+                                </div>
+                            </div>
+                            <div class="information col-md-6 col-lg-7 col-sm-5">
+                                <form class="container" action="">
+                                    <div class="row">
+                                        <div class="user_data col-md-12 col-lg-12">
+                                            <input type="text" value="Full name">
+                                        </div>
+                                        <div class="user_data col-md-12 col-lg-12">
+                                            <input type="text" value="Email">
+                                        </div>
+                                        <div class="user_data col-md-12 col-lg-12">
+                                            <input type="text" value="Phone">
+                                        </div>
+                                        <div class="user_data col-md-12 col-lg-12">
+                                            <input type="text" value="Login">
+                                        </div>
+                                        <div class="user_data col-md-12 col-lg-12">
+                                            <input type="text" value="Password">
+                                        </div>
+                                    </div>
+                                    <div class="buttons row">
+                                        <div class="button_save col-md-5 col-sm-5">
+                                            <a class="save_a" href="">Save</a>
+                                        </div>
+                                        <div class="button_cancel col-md-5 col-sm-5">
+                                            <a class="cancel_a" href="">Cancel</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="your_subscribes row">
+                            <a href="">Your subscribes</a>
+                        </div>
+                        <div class="accounts row">
+                            <div class="email col-md-4">
+                                <div class="account">
+                                    <img class="icon_img" src="https://www.collegeconsensus.com/wp-content/uploads/2016/12/intro_about-800x532.jpg" alt="">
+                                    <div class="icon_text">Harvard</div>
+                                </div>
+                            </div>
+                            <div class="email col-md-4">
+                                <div class="account">
+                                    <img class="icon_img" src="https://poetsandquants.com/wp-content/uploads/sites/5/2019/05/HBS.png" alt="">
+                                    <div class="icon_text">Stanford</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="myDIV">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-3" id="form_container">
+                    <button type="button" class="close ml-auto" aria-label="Close">
+                        <span aria-hidden="true" onclick="myFunction()">&times;</span>
+                    </button>
+                    <h3>New Message</h3>
+
+                    <form role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="email"> Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="message"> Message:</label>
+                                <textarea class="form-control" type="textarea" name="message" id="message"
+                                    maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right">Send &rarr;</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Posted your message successfully!</h3>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Error</h3> Sorry there was an error sending your form.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+        $(document).ready(function () {
+            $('.darkS').on('click', function () {
+                alert('This is Dark theme');
+            });
+        });
+        
+    </script>
+     <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
+<!--
+<form class="container" action="">
+                            <ul>
+                                <li>
+                                    <input type="text" value="Full name">
+                                </li>
+                                <li>
+                                    <input type="text" value="Email">
+                                </li>
+                                <li>
+                                    <input type="text" value="Phone">
+                                </li>
+                                <li>
+                                    <input type="text" value="Login">
+                                </li>
+                                <li>
+                                    <input type="text" value="Password">
+                                </li>
+                            </ul>
+                        </form>
+
+                        -->

@@ -1,0 +1,15 @@
+#myDIV {
+  display: none;
+  bottom: 5px;
+  right: 5px;
+  position: relative;
+  padding:15px 15px;
+  margin-top:15px;
+  -webkit-box-shadow: -4px 6px 17px 6px rgba(0,0,0,0.46);
+  -moz-box-shadow: -4px 6px 17px 6px rgba(0,0,0,0.46);
+  box-shadow: -4px 6px 17px 6px rgba(0,0,0,0.46);
+  width: 70vh;
+  height: 60vh;
+  
+  z-index: 2;
+}
